@@ -30,7 +30,8 @@ void UWorldPosition::BeginPlay()
 	
 	// UE_LOG(LogTemp, Warning, TEXT("%s"), **PtrLog);
 	
-	GetOwner()-> GetName();
+	//FString ObjectName = GetOwner()-> GetName();
+	UE_LOG(LogTemp, Warning, TEXT("Object name is: %s"), *GetOwner()-> GetName());
 
 }
 
