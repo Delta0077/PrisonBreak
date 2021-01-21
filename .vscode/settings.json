@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"D:/Repos/PrisonBreak/.vscode": true,
+		"D:/Repos/PrisonBreak/Content": true,
+		"D:/Repos/PrisonBreak/Intermediate": true
+	}
+}

@@ -1,0 +1,977 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "PrisonBreak Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win32",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"Win64",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Shipping",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreak HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreak HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreak",
+				"HTML5",
+				"Test",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreakEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"Debug",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreakEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PrisonBreakEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		},
+		{
+			"label": "PrisonBreakEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PrisonBreakEditor",
+				"Win64",
+				"Development",
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "H:\\Epic Games\\UE_4.22"
+			}
+		}
+	]
+}

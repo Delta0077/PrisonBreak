@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "PrisonBreak (Debug)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreak Win64 Debug Build",
+			"program": "D:\\Repos\\PrisonBreak\\Binaries\\Win64\\PrisonBreak-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreak (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreak Win64 DebugGame Build",
+			"program": "D:\\Repos\\PrisonBreak\\Binaries\\Win64\\PrisonBreak-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreak (Development)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreak Win64 Development Build",
+			"program": "D:\\Repos\\PrisonBreak\\Binaries\\Win64\\PrisonBreak.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreak (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreak Win64 Shipping Build",
+			"program": "D:\\Repos\\PrisonBreak\\Binaries\\Win64\\PrisonBreak-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreak (Test)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreak Win64 Test Build",
+			"program": "D:\\Repos\\PrisonBreak\\Binaries\\Win64\\PrisonBreak-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreakEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreakEditor Win64 Debug Build",
+			"program": "H:\\Epic Games\\UE_4.22\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject"
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreakEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreakEditor Win64 DebugGame Build",
+			"program": "H:\\Epic Games\\UE_4.22\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject"
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "PrisonBreakEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "PrisonBreakEditor Win64 Development Build",
+			"program": "H:\\Epic Games\\UE_4.22\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject"
+			],
+			"cwd": "H:\\Epic Games\\UE_4.22",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "H:\\Epic Games\\UE_4.22\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"D:\\Repos\\PrisonBreak\\PrisonBreak.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "H:\\Epic Games\\UE_4.22"
+		}
+	]
+}
