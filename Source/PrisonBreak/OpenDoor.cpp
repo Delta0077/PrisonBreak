@@ -19,6 +19,9 @@ UOpenDoor::UOpenDoor()
 void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	
+	// float InitialYaw = GetOwner()->GetActor
 }
 
 
