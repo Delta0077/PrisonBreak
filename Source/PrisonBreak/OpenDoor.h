@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Engine/TriggerVolume.h"
 #include "OpenDoor.generated.h"
+
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -15,6 +17,7 @@ class PRISONBREAK_API UOpenDoor : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UOpenDoor();
+	
 
 protected:
 	// Called when the game starts
@@ -24,7 +27,15 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 private:
-	float TargetYaw;
-	//float CurrentYaw = 
+
+	float CurrentYaw;
+	float InitialYaw;
+
 		
+
+	UPROPERTY(EditAnywhere)
+	float TargetYaw = -90.f;
+
+	UPROPERTY(EditAnywhere)
+	ATriggerVolume* PressurePlate;
 };
