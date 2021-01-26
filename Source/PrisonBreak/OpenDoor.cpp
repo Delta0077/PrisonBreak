@@ -48,9 +48,11 @@ void UOpenDoor::OpenDoor(float DeltaTime)
 		GetOwner()->SetActorRotation(DoorRotation);
 }
 
-void UOpenDoor::CloseDoor(float DeltaTime)
+void UOpenDoor::CloseDoor(float DeltaTime) //	My Own CloseDoor() logic
 {
-		
+		CurrentYaw = GetOwner()->GetActorRotation().Yaw;
+		InitialYaw -= CurrentYaw;
+		InitialYaw = FMath::Lerp(CurrentYaw, InitialYaw, DeltaTime * 1.f);
 		FRotator DoorRotation = GetOwner()->GetActorRotation();
 		DoorRotation.Yaw = InitialYaw;
 		GetOwner()->SetActorRotation(DoorRotation);
