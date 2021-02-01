@@ -92,8 +92,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// If the physic handle is attach.
-	// Move the Object we are holding.
-	
+	// Move the Object we are holding.	
 }
 
 FHitResult UGrabber::GetFirstPhysicsBodyInReach() const
