@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "OpenDoor.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
-#include "OpenDoor.h"
 #include "GameFramework/Actor.h"
 
 
@@ -31,6 +31,7 @@ void UOpenDoor::BeginPlay()
 	}
 
 	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
+
 }
 
 
@@ -52,7 +53,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 		}
 		
 	}	
-	GetWorld()->GetTimeSeconds();	
+	GetWorld()->GetTimeSeconds();
 }
 void UOpenDoor::OpenDoor(float DeltaTime)
 {

@@ -34,12 +34,11 @@ private:
 	void Grab();
 	void Release();
 
-	void Fire();
-	void Release1();
+	// void Fire();
+	// void Release1();
 
 	void FindPhysicsHandle();
 	void SetupInputComponent();
 
 	FHitResult GetFirstPhysicsBodyInReach() const;
 };
-
