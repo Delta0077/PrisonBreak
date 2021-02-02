@@ -64,7 +64,7 @@ void UGrabber::Grab()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Grabber Pressed"));
 
-	GetFirstPhysicsBodyInReach();
+	FHitResult HitResult = GetFirstPhysicsBodyInReach();
 	// If we hit something then attach the physics handle.
 	// TODO attach physics handle.
 
